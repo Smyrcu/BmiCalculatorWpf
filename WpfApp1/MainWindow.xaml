@@ -6,16 +6,16 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="BMI Calculator" Height="450" Width="800">
-    <Grid Margin="0,0,0,-6">
+    <Grid Margin="0,0,0,0">
         <Label x:Name="systemLabel" Content="System:" HorizontalAlignment="Left" Margin="66,83,0,0" VerticalAlignment="Top" Width="93" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" FontSize="20"/>
         <Button x:Name="submitButton" Content="Submit" HorizontalAlignment="Left" Margin="66,220,0,0" VerticalAlignment="Top" FontSize="20" Click="submitButton_Click"/>
         <Label x:Name="weightLabel" Content="Weight: (lbs)" HorizontalAlignment="Left" Margin="66,125,0,0" VerticalAlignment="Top" Width="119" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" FontSize="20" Height="37"/>
         <Label x:Name="heightLabel" Content="Height: (in)" HorizontalAlignment="Left" Margin="66,170,0,0" VerticalAlignment="Top" Width="119" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" FontSize="20" Height="37"/>
+        <ComboBox x:Name="systemComboBox" HorizontalAlignment="Left" Margin="164,94,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" FontSize="16" Text="Metric" SelectedIndex="0" FontWeight="Normal"/>
         <TextBox x:Name="weightTextBox" HorizontalAlignment="Left" Margin="190,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Height="37" FontSize="20" PreviewTextInput="NumberValidationTextBox"/>
         <TextBox x:Name="heightTextBox" HorizontalAlignment="Left" Margin="190,170,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Height="37" FontSize="20" PreviewTextInput="NumberValidationTextBox"/>
-        <ComboBox x:Name="systemComboBox" HorizontalAlignment="Left" Margin="164,94,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" FontSize="16" Text="Metric" SelectedIndex="0" FontWeight="Normal"/>
         <Label x:Name="bmiLabel" Content="" HorizontalAlignment="Left" Margin="66,273,0,0" VerticalAlignment="Top" Height="48" Width="441" FontSize="28"/>
         <Label x:Name="classificationLabel" Content="" HorizontalAlignment="Left" Margin="66,326,0,0" VerticalAlignment="Top" Height="37" Width="441" FontSize="20"/>
-
+ 
     </Grid>
 </Window>
