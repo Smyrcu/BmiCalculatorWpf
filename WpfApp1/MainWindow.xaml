@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="BMI Calculator" Height="450" Width="800">
     <Grid Margin="0,0,0,-6">
         <Label x:Name="systemLabel" Content="System:" HorizontalAlignment="Left" Margin="66,83,0,0" VerticalAlignment="Top" Width="93" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" FontSize="20"/>
         <Button x:Name="submitButton" Content="Submit" HorizontalAlignment="Left" Margin="66,220,0,0" VerticalAlignment="Top" FontSize="20" Click="submitButton_Click"/>
